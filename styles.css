@@ -1,33 +1,121 @@
+/* ====== COLOR PALETTE ====== */
 :root {
-    --color-abyss-black: #0b0c10;
-    --color-ashen-grey: #3a3f44;
-    --color-rust-bronze: #7a5c41;
-    --color-ember-orange: #d17f2f;
-    --color-blood-crimson: #8a1c1c;
-    --color-faded-gold: #c1a55f;
-    --color-pale-bone: #d9d6cf;
+  --color-abyss-black: #0b0c10;
+  --color-ashen-grey: #3a3f44;
+  --color-rust-bronze: #7a5c41;
+  --color-ember-orange: #d17f2f;
+  --color-blood-crimson: #8a1c1c;
+  --color-faded-gold: #c1a55f;
+  --color-pale-bone: #d9d6cf;
+}
+
+/* ====== GLOBAL ====== */
+* {
+  box-sizing: border-box;
 }
 
 body {
-    background: var(--color-ashen-grey);
-    color: var(--color-pale-bone);
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0%;
-    padding: 0%;
-}
-  
-.header {
-    background: var(--color-abyss-black);
-    color: var(--color-pale-bone);
-    width: 100%;
-    height: 100px;
-    margin: 0%;
-    padding: 0%;
-
-}
-  
-.header h1 {
-    margin-top: 0%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--color-abyss-black);
+  color: var(--color-pale-bone);
+  line-height: 1.6;
 }
 
+a {
+  color: var(--color-pale-bone);
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
+a:hover {
+  color: var(--color-ember-orange);
+}
+
+/* ====== HEADER ====== */
+header {
+  background: var(--color-abyss-black);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--color-ashen-grey);
+}
+
+header h1 {
+  color: var(--color-faded-gold);
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== HERO ====== */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(
+    to bottom,
+    var(--color-abyss-black),
+    var(--color-ashen-grey)
+  );
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--color-faded-gold);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--color-pale-bone);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--color-ember-orange);
+  color: var(--color-abyss-black);
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: var(--color-faded-gold);
+}
+
+/* ====== CONTENT SECTIONS ====== */
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h3 {
+  color: var(--color-faded-gold);
+  margin-bottom: 1rem;
+}
+
+section p {
+  color: var(--color-pale-bone);
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background: var(--color-ashen-grey);
+  color: var(--color-rust-bronze);
+  text-align: center;
+  padding: 1.5rem;
+}
