@@ -73,13 +73,23 @@ nav ul {
 .hero h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  margin-top: 5rem;
   color: var(--color-faded-gold);
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: var(--color-pale-bone);
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 5rem 2rem;
+    margin-bottom: -3rem;
+    color: var(--color-pale-bone);
+  
+    /* background image */
+    background: linear-gradient(
+        rgba(11, 12, 16, 0.85),   /* dark overlay */
+        rgba(11, 12, 16, 0.85)
+      ),
+      url("669303.png") center/cover no-repeat;
 }
 
 .btn {
@@ -119,3 +129,16 @@ footer {
   text-align: center;
   padding: 1.5rem;
 }
+
+.first {
+    background: linear-gradient(
+      to bottom,
+      var(--color-ashen-grey) 25%,   /* soft gray at the top */
+      var(--color-abyss-black) 100% /* fades into black */
+    );
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
